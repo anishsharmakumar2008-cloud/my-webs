@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RAJASTHAN COACHING CLASSES | Courses & Fees</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f8fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #101b38;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    header h2 {
+      color: #f6c453;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #101b38, #214d81);
+      color: white;
+      text-align: center;
+      padding: 85px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #f6c453;
+      color: #101b38;
+      padding: 12px 22px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 55px 8%;
+      scroll-margin-top: 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 30px;
+      color: #101b38;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .course-card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px #15284a12;
+      border: 1px solid #e6eaf2;
+    }
+
+    .course-card h3 {
+      font-size: 23px;
+      margin-bottom: 10px;
+      color: #214d81;
+    }
+
+    .price {
+      font-size: 30px;
+      font-weight: bold;
+      color: #168453;
+      margin: 18px 0;
+    }
+
+    .price span {
+      font-size: 14px;
+      font-weight: normal;
+      color: #555;
+    }
+
+    .course-card ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .about {
+      background: #eaf0fa;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 650px;
+      margin: 12px auto;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #101b38;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav a {
+        margin: 0 8px 0 0;
+        display: inline-block;
+      }
+
+      section {
+        padding: 40px 5%;
+      }
+
+      .hero {
+        padding: 60px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>RAJASTHAN COACHING CLASSES</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Build Your Future With Us</h1>
+
+      <p>
+        Learn Mathematics & Physics with expert guidance.
+      </p>
+
+      <a class="btn" href="#courses">Explore Courses</a>
+    </section>
+
+    <section id="courses">
+      <div class="section-title">
+        <h2>Our Courses & Fees</h2>
+        <p>Choose your subject and enquire about admission.</p>
+      </div>
+
+      <div class="courses">
+
+        <article class="course-card">
+          <h3>Mathematics</h3>
+
+          <p><strong>Class:</strong> 1st Year Students</p>
+
+          <p>
+            Concept-based learning, problem solving
+            and practice questions.
+          </p>
+
+          <div class="price">
+            ₹600 <span>/ subject</span>
+          </div>
+
+          <ul>
+            <li>Topic-wise teaching</li>
+            <li>Practice questions</li>
+            <li>Doubt-solving guidance</li>
+          </ul>
+
+          <button class="btn"
+            onclick="enquire('Mathematics')">
+            Enquire Now
+          </button>
+        </article>
+
+        <article class="course-card">
+          <h3>Physics</h3>
+
+          <p><strong>Class:</strong> 1st Year Students</p>
+
+          <p>
+            Understand concepts, formulas
+            and numerical problems.
+          </p>
+
+          <div class="price">
+            ₹600 <span>/ subject</span>
+          </div>
+
+          <ul>
+            <li>Concept-based learning</li>
+            <li>Numerical practice</li>
+            <li>Doubt-solving guidance</li>
+          </ul>
+
+          <button class="btn"
+            onclick="enquire('Physics')">
+            Enquire Now
+          </button>
+        </article>
+
+      </div>
+
+      <p style="text-align:center; margin-top:25px;">
+        Fees and batch details can be confirmed with the academy.
+      </p>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-title">
+        <h2>About Our Academy</h2>
+      </div>
+
+      <p>
+        Welcome to RAJASTHSN COACHING CLASSES. Our aim is to help
+        students understand concepts clearly and improve
+        their academic performance.
+      </p>
+
+      <p><strong>Faculty:</strong> ANISH SHARMA</p>
+      <p><strong>Subjects:</strong> Mathematics & Physics</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-title">
+        <h2>Admission & Contact</h2>
+      </div>
+
+      <p>
+        <strong>Address:</strong>
+        Near Rajesh Pilot College, Dausa Jirota
+      </p>
+
+      <p>
+        Contact us on WhatsApp for course and admission details.
+      </p>
+
+      <button class="btn"
+        onclick="enquire('Admission Information')">
+        Contact on WhatsApp
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> RAJASTHAN COACHING CLASSES</p>
+    <p>Learn Today, Lead Tomorrow.</p>
+  </footer>
+
+  <script>
+    // Replace this with the academy's WhatsApp number.
+    // Use country code + number, without + or spaces.
+    const academyPhone = "919057951156";
+
+    function enquire(course) {
+      if (!/^91\d{10}$/.test(academyPhone)) {
+        alert("Please add the academy's correct WhatsApp number in the code.");
+        return;
+      }
+
+      const message =
+        "Hello RAJASTHAN COACHING CLASSES! I want information about: " + course;
+
+      const url =
+        "https://wa.me/" + academyPhone +
+        "?text=" + encodeURIComponent(message);
+
+      window.open(url, "_blank");
+    }
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
